@@ -162,6 +162,10 @@ body {
 	line-height: 50px;
 	text-align: center;
 }
+.p {
+	margin-left: 10px;
+	text-decoration: none;
+}
 
 </style>
 
@@ -189,13 +193,13 @@ var sucFunc = function(data){
     if(end>maxCnt)end=maxCnt;
     console.log(start+":start "+end+":end")
     if(start!=0){
-       $('.page').append($('<a href="#" id="p" onclick="pageClick('+(start-2)+')"/>').text("《"));
+       $('.page').append($('<a href="#" class="p" onclick="pageClick('+(start-2)+')"/>').text("《"));
     }
     for(var i=start; i<end; i++){
-       $('.page').append($('<a href="#" id="p" onclick="pageClick('+i+')"/>').text(i+1));
+       $('.page').append($('<a href="#" class="p" onclick="pageClick('+i+')"/>').text(i+1));
     }
     if(end<maxCnt){
-       $('.page').append($('<a href="#" id="p" onclick="pageClick('+end+')"/>').text("》"));
+       $('.page').append($('<a href="#" class="p" onclick="pageClick('+end+')"/>').text("》"));
     }
  };
  
