@@ -18,8 +18,8 @@ public class BbsDAO {
 	
 	public BbsDAO() {
 		String url="jdbc:mysql://localhost:3306/lecture";
-		String user=System.getenv("MYSQL_USER");
-		String password=System.getenv("MYSQL_PW");
+		String user="scott";
+		String password="tiger";
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
