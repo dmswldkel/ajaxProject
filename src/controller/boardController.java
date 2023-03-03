@@ -16,6 +16,7 @@ import bbs.BbsDAO;
 public class boardController extends HttpServlet{
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+			resp.setHeader("Access-Control-Allow-Origin", "*");
 	       resp.setContentType("application/json");
 	       resp.setCharacterEncoding("UTF-8");
 	       System.out.println("실행됨");
