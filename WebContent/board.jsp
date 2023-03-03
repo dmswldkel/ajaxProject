@@ -206,7 +206,7 @@ var sucFunc = function(data){
  function pageClick(page){
      page=page+1;
         $.ajax({
-             url: 'board.do',
+             url: 'http://192.168.99.100:8080/AjaxProject/board.do',
              type: 'get',
              contentType:'application/x-www-form-urlencoded; charset=UTF-8',
              data: {page:page},
@@ -218,7 +218,7 @@ var sucFunc = function(data){
 $(function(){
 	console.log("실행됨");
  $.ajax({
-        url: 'board.do',
+        url: 'http://192.168.99.100:8080/AjaxProject/board.do',
         type: 'get',
         contentType:'application/x-www-form-urlencoded; charset=UTF-8',
         dataType: "json",
